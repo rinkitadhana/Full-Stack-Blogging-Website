@@ -6,9 +6,14 @@ const Navbar = () =>{
     return(
         <>
          <nav className="navbar">
-            <Link to="/" className="flex-none w-10">
-               <img src={logo} className="w-full" />
+            {/* Logo Starts */}
+            <Link to="/" className="flex-col w-10 ">
+               {/* <img src={logo} className="w-full" /> */}
+               <h1 className=" text-3xl font-bold mx-4 md:text-2xl md:ml-[-30px]">Anecdot.</h1>
+               <div className="w-20 md:w-14 ml-10 md:ml-[-15px] border-b-4 content-end  border-red rounded-xl mt-[-6px]"></div>
             </Link>
+            {/* Logo Ends */}
+            
             <div className={"absolute bg-white w-full left-0 top-full m-0.5 border-b border-grey py-4 px-[5vw] md:border-0 md:block md:relative md:inset-0 md:p-0 md:w-auto md:show " + ( searchBoxVisiblity ? "show" : "hide" ) }>
                 <input
                 type="text"
