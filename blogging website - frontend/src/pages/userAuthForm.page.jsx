@@ -62,7 +62,7 @@ const UserAuthForm = ({ type }) => {
         )}
       </form>
     </section>
-    //</AnimationWrapper>
+    // </AnimationWrapper>
   );
 };
 
